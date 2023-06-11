@@ -1,0 +1,11 @@
+version: '3.10'
+
+services:
+  bot:
+    build: .
+    #    depends_on:
+    #      - db
+    env_file:
+      - .env
+    volumes:
+      - .:/aiogram_guess_bot
